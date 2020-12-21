@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <neta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The IT World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1> Thu </h1> 
+        </div>
+        <ul class="navlink">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="team.html">Team Profile</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="project.html">Project Idea</a></li>
+            <li><a href="tech.html">IT Technology</a></li>
+            <li><a href="work.html">IT Work</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <h2>Project Idea</h2>
+    <div class="tabs">
+        <div class="tabs-sidebar">
+            <button class="tabs-btn" data-for-tab="1">Overview</button>
+            <button class="tabs-btn" data-for-tab="2">Motivation</button>
+            <button class="tabs-btn" data-for-tab="3">Description</button>
+            <button class="tabs-btn" data-for-tab="4">Tools & Technologies</button>
+            <button class="tabs-btn" data-for-tab="5">Skills Required</button>
+            <button class="tabs-btn" data-for-tab="6">Outcome</button>  
+        </div>
+        <div class="tabs-contents tabs-contents-block" data-tab="1">
+            <h3>Overview</h3>
+            <p><br>
+                Realizing that there is a lack of knowledge about recycling in Vietnam, I have come 
+                up with an idea to incorporate waste management into mobile applications, which will 
+                be available for cross-platform, both Android and iOS. On the whole, the aim of this 
+                project is to develop a real-time 2D objects detection on a reactive smartphone app 
+                that will quickly identify and categorize recycling trash. After that, the app tells 
+                the users to know which trash bins will be used to throw rubbish away. There are also 
+                features to enhance users' experiences, including a QR code scanner in case of the 
+                object detection cease to function, a record of recycling activities, and a list of 
+                recycling locations based on the phone GPS. 
+            </p>
+        </div>
+        <div class="tabs-contents tabs-contents-block" data-tab="2">
+            <h3>Motivation</h3>
+            <p><br>
+                First of all, I have studied abroad in Calgary, Canada for three years and I remembered 
+                how amazingly their waste-sorting robot worked at the mall. In particular, the recycling 
+                robot is known as Oscar, which used artificial intelligence to classify trash into the 
+                corresponding waste bins. As a result, the idea has come to my mind that it will be very 
+                utilitarian if we have a smartphone app that works pretty much like Oscar. Secondly, 
+                according to the Ministry of Natural Resources and Environment, each family in Vietnam 
+                uses up to one kilogram of plastic bags each month. Therefore, big cities like Hanoi and 
+                Ho Chi Minh City can discharge up to 80 tons of plastic trash into the environment. Moreover, 
+                the majority of trash will be buried or sent to landfills due to the inefficient classification 
+                recycling trash, in which people have difficulties to remember and figure out the suitable bins 
+                for each type of garbage. Furthermore, there are some cases that the trash does not fit in any 
+                category illustrated on the trash bin, which leads to people either mixing up the trash or 
+                throwing them in the random waste carts. As a consequence, these actions have ended up with a 
+                polluted and contaminated environment as it will be very time-consuming to sort trash out. Hence, 
+                I believe this project will simplify and save time on the process of recycling. In addition, it 
+                will have a positive impact on the environment because the more people use the app, the more 
+                garbage will be recycled, and the project also offers to acknowledge people about waste disposal 
+                and what they can do to protect the environment. 
+            </p>
+            <br><br>
+            <iframe src="https://www.youtube.com/embed/Sc2hdmwGgnU" class="vidcen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="tabs-contents tabs-contents-block" data-tab="3">
+            <h3>Description</h3>
+            <p><br>
+                The first and foremost feature I would like to develop is a real-time object detection that 
+                is used to differentiate garbage and sort them into the following categories: organic waste, 
+                recyclable, and non-recyclable. In specific, the feature mainly focuses on dealing with 2D 
+                objects because 3D detection can be very challenging to carry out as there is a lack of 
+                diverse datasets within a category. In addition, this feature is significantly inspired by 
+                the iPhone's camera which has a good reputation for its face recognition so I think that it 
+                will be a brilliant idea to incorporate object detection into smartphone applications. 
+                Therefore, people will be able to recognize the recycling trash and highlight their 
+                characteristics in real time. For instance, say you buy a cup of iced coffee from Highlands. 
+                It is obvious that they will serve your beverage in a cup with a lid and a straw, all in 
+                plastics. However, after you have finished drinking, you might not know if everything you use 
+                is recyclable so you use the object detection via camera feed and it will return with the result 
+                like "Recyclable but remember to remove the liquid". At the same time, the screen background will 
+                turn blue to tell you the respective bin which is for recycling trash. As a result, you know exactly 
+                where to throw your trash away and save more time rather than looking left and right to locate the 
+                right waste bins. Overall, a real-time 2D object detection is expected to work by training through 
+                an open-source software library for machine learning like Google Tensorflow, which is based on the 
+                proposed paperworks like Scaled-YOLOv4: Scaling Cross Stage Partial Network.<br><br>
+
+                The second feature of the product that I would like to build is a QR code scanner. What I expect 
+                from the input is that every item that we use daily will have a QR code printed on the objects where 
+                it is the most visible, such as on the milk container’ package or the bottle’s cap. The QR code provides 
+                further information about materials that make up the product and whether it is recyclable or not. 
+                Therefore, whenever you want to dispose of the trash, all you need to do is use this feature to scan 
+                and read the code, then the app displays information on the screen either "Recyclable" or "Non-recyclable". 
+                Subsequently, the application changes the colour of its background corresponding to the colour of the waste bin. 
+                Additional information to colours of trash cans, green representing organic wastes, such as food or drink, whereas 
+                blue stands for recycling bin, and black bins are used for the remaining rubbish. This feature is an alternative 
+                to the 2D objects detection in case of malfunctions and it only works best for those items that can be printable 
+                on the packaging. Let’s take an example of a can of Coca-Cola having a QR code apparently displayed on the surface. 
+                By scanning the QRcode, users are able to indicate whether the can is recyclable or not, and acquire further 
+                information about materials made up of this product. In this case, the app will let the users know that the 
+                Coca-Cola can is recyclable because it is made of 42% recycled aluminum and 56% new aluminum. As a result, 
+                it is now the users’ duty to throw the can into the right bin corresponding to the recyclable.<br><br>
+
+                The third feature I would like to add to the project is a dashboard called "Your activity". In essence, 
+                it keeps track of the users’ activities and informs the number of times people use the app daily and the 
+                average amount of disposed waste each day. The data will depend on QR codes users scan or how many times 
+                the object detection succeeds to identify recycling trash. Later on, the app can aggregate data to give 
+                users an insight into what extent they have done to save the environment. Similar to when you bring your 
+                own bottle to get water from the fountain at RMIT, it tells you how many disposable plastic bottles you 
+                have saved through using it. I believe that this feature will motivate people to become more involved in 
+                recycling because it gives people a sense of reward by showing their accomplishment to save the environment.<br><br>
+
+                Last but not least, this project will include a list of nearby recycling centers, which are based on the 
+                phone location. Therefore, it is impossible if there is no GPS involved which will be used to identify the 
+                exact location. This feature mainly focuses on detecting the specialized centers dealing with hazardous 
+                wastes, like harmful chemicals, or drop-off recycling centers for electronics. This is because it requires 
+                a more complicated process to actually recycle these types of items. For example, batteries which are 
+                commonly used for everyday gadgets like TV remotes. These batteries are recyclable, however, they need 
+                to hand in to specialists of recycling electronics because batteries made of cobalt and lead, which can 
+                contaminate the Earth if they are not disposed properly. Therefore, it is very important for users to use 
+                first and second features to identify the recyclable garbage and figure out where to send them to.   
+            </p>
+        </div>
+        <div class="tabs-contents tabs-contents-block" data-tab="4">
+            <h3>Tools & Technologies</h3>
+            <p><br>
+                As mentioned above, this smartphone app will be developed on the cross platform, both Android and iOS, 
+                which means that there will be two programming languages involved, in which Android apps will use Java 
+                programming language, whereas Swift is used for iOS. Therefore, different softwares can be installed in 
+                order to create this app. On the one hand, Android Studio is a system software that is used to build any 
+                Android apps and the most important thing to know that it is an open source, which means it is available 
+                for any developers to download and work on many platforms. On the other hand, Xcode is the perfect 
+                software to write Swift and build an iOS app, however, it can only be installed on Apple's operating 
+                system. In other words, even though Xcode is free and open source, it is only available to download 
+                from Mac App Store. Besides, in order to build a 2D object detection, it is inevitable to involve 
+                machine learning like Google Tensorflow software to train models. 
+            </p>
+        </div>
+        <div class="tabs-contents tabs-contents-block" data-tab="5">
+            <h3>Required Skills</h3>
+            <p><br>
+                Based on the current skills and the minimal knowledge about artificial intelligence along with machine 
+                learning that I have, I believe that carrying out this project will be very challenging and somewhat 
+                not feasible. Therefore, I have broken down into smaller tasks that I am able to do in order to increase 
+                the practicability of this project. The foremost skill that I need is cross-platform app development 
+                in which it is essential to learn Java and Swift programming languages in order to turn my ideas into 
+                reality. This can be done through program electives at RMIT such as mobile application development and 
+                I expect that this course will cover the open-source softwares supporting those programming languages. 
+                Moreover, I find that there are some relevant skills, including database management and UI/UX, also 
+                offered by RMIT program electives so it is not really difficult to acquire these skills, yet they will 
+                consume lots of time to master. Furthermore, it is essential for me to become proficient in mathematics 
+                and statistics to deal with algorithms due to the involvement of machine learning in this project. It is 
+                also important for me to understand the process of training a model, in which I need to establish the 
+                development environment, collect training datasets together with test data, configure and train the 
+                model, convert the trained model to TensorFlow, and eventually test the model in a mobile application.
+            </p>
+        </div>
+        <div class="tabs-contents tabs-contents-block" data-tab="6">
+            <h3>Outcome</h3>
+            <p><br>
+                The most significant outcome of this development is its positive impact on the environment, which not 
+                only influenced people like us, but also the natural habitat of animals. The more trash that can be 
+                recycled, the fewer toxic chemicals and greenhouse gases released to the environment, which slows down 
+                global warming so that the habitats of polar bears or penguins will be preserved. In addition, while 
+                people are able to minimize the exploitation of raw materials by reprocessing products with recycling 
+                materials, the rainforests will be saved from deforestation. For people like us, there will be a save of 
+                space owing to the fewer landfills existing and we could save more money on manufacturing products as raw 
+                materials cost more than the recycling material and they might be only used once. As a result, this project 
+                has a majority of positive effects on human lives and society, besides the time investment to develop a 
+                perfectly-working 2D object detection, which can also be used to leverage 3D object detection.  
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <a href="mailto:s3878667@rmit.edu.vn"><i class="fa fa-envelope" aria-hidden="true" style="font-size:50px;color:white;"></i></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
